@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree";
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+.banner-img img {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-container {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 1px hsl(0, 0%, 7%);
+    width: 22%;
+    height: 405px;
+    margin: 90px auto;
+    padding: 1.2rem;
+    transition: box-shadow 200ms ease-out, transform 200ms ease-out;
+    cursor: pointer;
+}
+.card-container:focus-visible{
+    outline: 2px solid var(--clr-black);
+}
+
+.card-container:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 16px 16px 0px 0px #000;
+    transition: box-shadow 200ms ease-out,transform 200ms ease-out;
+}
+
+.box-card button {
+    width: 70px;
+    background-color: hsl(47, 88%, 63%);
+    border: transparent;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.box-card p {
+    margin: 10px 0 10px 0;
+    font-size: 11px;
+}
+
+.box-active-states h2 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box-active-states:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.box-author p {
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    line-height: 1.3rem;
+    color: hsl(0, 0%, 50%);
+}
+
+.box-avatar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.box-avatar img {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.box-avatar p {
+    font-size: 11px;
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+}
+
+.attribution {
+    text-align: center;
+    list-style: none;
+}
+
+/* Responsiveness */
+
+/* small laptops from 1100px */
+@media (max-width:1100px) {
+    .card-container {
+        width: 28%;
+        height: auto;
+        margin: 60px auto;
+    }
+}
+
+/* tablet 900px */
+@media (max-width:900px) {
+    .card-container {
+        width: 38%;
+        height: auto;
+        margin: 60px auto;
+    }
+}
+
+/* mobile 576px */
+@media (max-width:576px) {
+    .card-container {
+        width: 80%;
+        height: auto;
+        margin: 60px auto;
+    }
+
+    .box-active-states h2 {
+        font-size: 15px;
+    }
+
+    .box-card {
+        margin: 10px 0 20px 0;
+    }
+
+
+}
